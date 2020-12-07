@@ -1,35 +1,34 @@
 {
-  "name": "url-shortner-microservice",
-  "version": "1.0.0",
-  "description": "URL Shortner Microservice FreeCodeCamp",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "breakpoint25",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/breakpoint25/url-shortner-microservice.git"
-  },
-  "keywords": [
-    "node",
-    "express"
-  ],
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dns": "^0.2.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongodb": "^3.6.3",
-    "mongoose": "^5.11.4",
-    "random-number": "0.0.9"
-  },
-  "devDependencies": {
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
-  }
+    "name": "url-shortner-microservice",
+    "version": "1.0.0",
+    "description": "URL Shortner Microservice FreeCodeCamp",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "breakpoint25",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/breakpoint25/url-shortner-microservice.git"
+    },
+    "keywords": [
+        "node",
+        "express"
+    ],
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongodb": "^3.6.3",
+        "mongoose": "^5.11.4",
+        "random-number": "0.0.9"
+    },
+    "devDependencies": {
+        "eslint": "^7.15.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.22.1"
+    }
 }
