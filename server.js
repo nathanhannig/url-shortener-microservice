@@ -10,14 +10,19 @@ const dotenv = require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT;
-const mongoDB = process.env.MONGOLAB_URI;
+const mongoDB = process.env.MONGODB_URI;
 
 app.use(cors({ optionSuccessStatus: 200 }));  // some legacy browsers choke on 204
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
 // Database connection setup
-mongoose.connect(mongoDB);
+mongoose.connect(mongoDB, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+});
 const db = mongoose.connection;
 db.on('error', (err) => { console.log('Mongo DB connection error', err); });
 db.once('open', () => { console.log('Mongo DB connected.'); });
